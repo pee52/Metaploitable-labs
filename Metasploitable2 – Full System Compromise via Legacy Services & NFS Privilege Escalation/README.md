@@ -30,7 +30,7 @@ Target identified within an isolated lab subnet.
 ```bash
 nmap -T4 -sV 192.168.18.4
 ```
-![Nmap Scan](screenshot/nmap_scan.png)
+![Nmap Scan](Screenshot 2026-05-30 135822.png)
 
 ## Exposed Services (Legacy System)
 - FTP (vsftpd 2.3.4)
