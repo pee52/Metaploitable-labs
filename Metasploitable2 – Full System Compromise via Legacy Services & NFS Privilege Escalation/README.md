@@ -64,7 +64,7 @@ set LHOST <192.168.18.5>
 run
 getuid # Server username : root
 ```
-![Root Proof](Screenshot 2026-05-30 131952.png")
+![Root Proof]("Screenshot 2026-05-30 131952.png")
 
 ## Privilege Escalation Enumeration--Path2
 (NFS Misconfiguration)
