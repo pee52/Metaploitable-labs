@@ -65,7 +65,7 @@ set LHOST 192.168.18.5
 run
 getuid
 ```
-![Root Proof](Screenshot/131952.png)
+![Root Proof](https://github.com/pee52/Metaploitable-labs/blob/main/Metasploitable2%20%E2%80%93%20Full%20System%20Compromise%20via%20Legacy%20Services%20%26%20NFS%20Privilege%20Escalation/Screenshot%202026-05-30%20131952.png)
 
 ---
 
