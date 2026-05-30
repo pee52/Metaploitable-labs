@@ -30,7 +30,7 @@ Target identified within an isolated lab subnet.
 ```bash
 nmap -T4 -sV 192.168.18.4
 ```
-![Nmap Scan](Screenshot 2026-05-30 135822.png)
+![Nmap Scan](https://github.com/pee52/Metaploitable-labs/blob/main/Metasploitable2%20%E2%80%93%20Full%20System%20Compromise%20via%20Legacy%20Services%20%26%20NFS%20Privilege%20Escalation/Screenshot%202026-05-30%20135822.png)
 
 ## Exposed Services (Legacy System)
 - FTP (vsftpd 2.3.4)
