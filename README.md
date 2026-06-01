@@ -8,7 +8,7 @@ Hands-on penetration testing labs using Kali Linux against Metasploitable 2.
 - Target: Metasploitable 2
 - Network: Host-only / Internal network
 
-##| Labs | Topic | Staus |
+##Labs
 - Lab 01: Initial Reconnaissance (Nmap)
 - Lab 02: FTP Anonymous Login
 - Lab 03: MySQL Enumeration
